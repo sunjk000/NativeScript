@@ -1,0 +1,49 @@
+﻿<Page xmlns="http://schemas.nativescript.org/tns.xsd" backgroundColor="orange">
+   <Page.actionBar>
+       <ActionBar title="My App" icon="">
+       </ActionBar>
+   </Page.actionBar>
+
+   <StackLayout margin="2">
+
+       <StackLayout orientation="horizontal">
+           <StackLayout borderWidth="1" borderColor="black" horizontalAlignment="left" verticalAlignment="top" padding="0">
+               <StackLayout borderWidth="1" borderColor="green" margin="0" width="50" height="50" />
+           </StackLayout>
+           <StackLayout borderWidth="1" borderColor="black" horizontalAlignment="left" verticalAlignment="top">
+               <StackLayout borderWidth="2" borderColor="green" margin="1" width="50" height="50" />
+           </StackLayout>
+           <StackLayout borderWidth="1" borderColor="black" horizontalAlignment="left" verticalAlignment="top">
+               <StackLayout borderWidth="3" borderColor="green" margin="2" width="50" height="50" />
+           </StackLayout>
+           <StackLayout borderWidth="1" borderColor="black" horizontalAlignment="left" verticalAlignment="top">
+               <StackLayout borderWidth="3" borderColor="green" margin="2">
+                   <Label text="Hello World!" />
+               </StackLayout>
+           </StackLayout>
+       </StackLayout>
+
+       <StackLayout orientation="horizontal">
+           <StackLayout borderWidth="1" borderColor="black" horizontalAlignment="left" verticalAlignment="top" padding="0">
+               <StackLayout borderWidth="1px" borderColor="green" margin="0px" width="50px" height="50px" />
+           </StackLayout>
+           <StackLayout borderWidth="1" borderColor="black" horizontalAlignment="left" verticalAlignment="top">
+               <StackLayout borderWidth="2px" borderColor="green" margin="1px" width="50px" height="50px" />
+           </StackLayout>
+           <StackLayout borderWidth="1" borderColor="black" horizontalAlignment="left" verticalAlignment="top">
+               <StackLayout borderWidth="3px" borderColor="green" margin="2px" width="50px" height="50px" />
+           </StackLayout>
+           <StackLayout borderWidth="1" borderColor="black" horizontalAlignment="left" verticalAlignment="top">
+               <StackLayout borderWidth="4px" borderColor="green" margin="3px">
+                   <Label text="Hello World!" />
+               </StackLayout>
+           </StackLayout>
+       </StackLayout>
+
+       <StackLayout orientation="horizontal">
+           <StackLayout borderWidth="1 2 3 4" borderColor="black" width="20" height="20" margin="10" />
+           <StackLayout borderWidth="1px 2px 3px 4px" borderColor="black" width="20" height="20" margin="10" />
+       </StackLayout>
+
+   </StackLayout>
+</Page>

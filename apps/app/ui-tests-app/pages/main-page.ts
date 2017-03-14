@@ -19,6 +19,7 @@ export function pageLoaded(args: EventData) {
     examples.set("i61", "pages/i61");
     examples.set("i73", "pages/i73");
     examples.set("i86", "pages/i86");
+    examples.set("asdf", "pages/asdf");
 
     let viewModel = new SubMainPageViewModel(wrapLayout, examples);
     page.bindingContext = viewModel;
