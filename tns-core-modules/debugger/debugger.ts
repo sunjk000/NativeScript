@@ -44,3 +44,48 @@ export function getNetwork(): domains.network.NetworkDomainDebugger {
 export function setNetwork(newNetwork: domains.network.NetworkDomainDebugger) {
     network = newNetwork;
 }
+
+export namespace NetworkAgent {
+    export interface Request {
+        url: string;
+        method: string;
+        headers: any;
+        postData?: string;
+    }
+
+    export interface RequestData {
+        requestId: string;
+        url: string;
+        request: Request;
+        timeStamp: number;
+        type: string;
+    }
+
+    export interface Response {
+        url: string;
+        status: number;
+        statusText: string;
+        headers: any;
+        headersText?: string;
+        mimeType: string;
+        fromDiskCache?: boolean;
+    }
+
+    export interface ResponseData {
+        requestId: string;
+        type: string;
+        response: Response;
+        timeStamp: number;
+    }
+
+    export interface SuccessfulRequestData {
+        requestId: string;
+        data: string;
+        hasTextContent: boolean;
+    }
+
+    export interface LoadingFinishedData {
+        requestId: string;
+        timeStamp: number;
+    }
+}
