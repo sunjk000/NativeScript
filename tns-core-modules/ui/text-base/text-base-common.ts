@@ -2,6 +2,7 @@ import { TextBase as TextBaseDefinition } from ".";
 import { View, ViewBase, Property, CssProperty, InheritedCssProperty, Style, isIOS, Observable, makeValidator, makeParser, Length } from "../core/view";
 import { PropertyChangeData } from "../../data/observable";
 import { FormattedString, Span } from "../../text/formatted-string";
+import { FontStyle, FontWeight, } from "../styling/font";
 
 export { FormattedString, Span };
 export * from "../core/view";
@@ -17,11 +18,32 @@ export abstract class TextBaseCommon extends View implements TextBaseDefinition 
     public text: string;
     public formattedText: FormattedString;
 
+    get fontFamily(): string {
+        return this.style.fontFamily;
+    }
+    set fontFamily(value: string) {
+        this.style.fontFamily = value;
+    }
+
     get fontSize(): number {
         return this.style.fontSize;
     }
     set fontSize(value: number) {
         this.style.fontSize = value;
+    }
+
+    get fontStyle(): FontStyle {
+        return this.style.fontStyle;
+    }
+    set fontStyle(value: FontStyle) {
+        this.style.fontStyle = value;
+    }
+
+    get fontWeight(): FontWeight {
+        return this.style.fontWeight;
+    }
+    set fontWeight(value: FontWeight) {
+        this.style.fontWeight = value;
     }
 
     get letterSpacing(): number {
